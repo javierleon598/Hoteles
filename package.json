@@ -1,0 +1,19 @@
+{
+  "name": "hoteles",
+  "version": "1.0.0",
+  "description": "Primer pry Node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierleon598/Hoteles.git"
+  },
+  "author": "Javier Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierleon598/Hoteles/issues"
+  },
+  "homepage": "https://github.com/javierleon598/Hoteles#readme"
+}
