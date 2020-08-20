@@ -83,13 +83,35 @@
     </div>
     <hr>
 
-    <img src="images/beach.png" alt="Responsive image" class="img-fluid">
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 420px;">
+          <img src="images/beach.png" class="d-block w-100" alt="primer slide">
+        </div>
+        <div class="carousel-item " style="height: 420px;">
+          <img src="images/beach2.png" class="d-block w-100" alt="segundo slide">
+        </div>
+        <div class="carousel-item " style="height: 420px;">
+          <img src="images/beach3.png" class="d-block w-100" alt="tercer slide">
+        </div>
+      </div>
+
+      <a href="#carouselControls" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a href="#carouselControls" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+
 
     <div class="card-columns">
       <!-- class="d-flex flex-wrap flex-row-reverse" -->
       <div class="card card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Barcelona
@@ -106,7 +128,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Buenos Aires
@@ -123,7 +145,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Lima
@@ -140,7 +162,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Rio de Janeiro
@@ -157,7 +179,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Bogota
@@ -174,7 +196,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Medellin
@@ -191,7 +213,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Ciudad de Mexico
@@ -208,7 +230,7 @@
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
         <!--  d-flex flex-column -->
-        <img class="card-img-top" src="images/hotel.png" alt="hotel img">
+        <img class="card-img-top img-card" src="images/hotel.png" alt="hotel img">
         <div class="card-header">
           <h5 class="card-title" data-toogle="tooltip" data-placement="top" title="Las primeras reservar cuentan con clases gratis" >
             Hotel Quito
@@ -291,9 +313,10 @@
   <script>
     $(function(){
       $("[data-toogle='tooltip']").tooltip();
-    });
-    $(function(){
       $("[data-toogle='popover']").popover();
+      $('.carousel').carousel({
+        interval: 2000
+      });
     });
   </script>
 </body>
