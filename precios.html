@@ -167,23 +167,77 @@
         </div>
       </div>
       <div class="tab-pane fade show" id="tajetas" role="tabpanel" aria-labelledby="tajetas-tab">
-        <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: blue; color: white;">
-              Tarjetas aceptadas
+        <div class="accordion" id="accordionTajetas">
+          <!-- Tarjeta Básica -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica"
+                  aria-expanded="true" aria-controls="collapseBasica">
+                  Tarjeta Básica
+                </button>
+              </h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tarjeta básica</li>
-              <li class="list-group-item">Tarjeta VIP</li>
-              <li class="list-group-item">Tarjeta Black</li>
-            </ul>
+            <div class="collapse" id="collapseBasica" aria-labelledby="headingOne" data-parent="#accordionTajetas">
+              <div class="card-body">
+                Puedes reservar en 3 cuotas sin interés.
+              </div>
+            </div>
           </div>
-        </div>
+          <!-- Tarjeta VIP -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVIP"
+                  aria-expanded="true" aria-controls="collapseVIP">
+                  Tarjeta VIP
+                </button>
+              </h5>
+            </div>
+            <div class="collapse" id="collapseVIP" aria-labelledby="headingTwo" data-parent="#accordionTajetas">
+              <div class="card-body">
+                Puedes reservar en 6 cuotas sin interés. Al llegar, recibirás una canasta de obsequios para disfrutar
+                con tu familia.
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta Black -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlack"
+                  aria-expanded="true" aria-controls="collapseBlack">
+                  Tarjeta Black
+                </button>
+              </h5>
+            </div>
+            <div class="collapse" id="collapseBlack" aria-labelledby="headingThree" data-parent="#accordionTajetas">
+              <div class="card-body">
+                Puedes reservar en 12 cuotas sin interés. Al llegar recibiras una canasta de obsequios para disfrutar
+                con tu familia y un acceso al gimnasio y spa todos los dias de tus vacaciones.
+              </div>
+            </div>
+          </div>
+        </div> <!-- accorion -->
       </div>
+      <!-- <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header" style="background-color: blue; color: white;">
+                Tarjetas aceptadas
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta básica</li>
+                <li class="list-group-item">Tarjeta VIP</li>
+                <li class="list-group-item">Tarjeta Black</li>
+              </ul>
+            </div>
+          </div> -->
       <div class="tab-pane fade show" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum a quos maxime dignissimos, accusantium doloremque itaque aut consequatur eveniet reprehenderit accusamus illum neque, deserunt ea explicabo tempore nobis minus repellat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum a quos maxime dignissimos, accusantium
+        doloremque itaque aut consequatur eveniet reprehenderit accusamus illum neque, deserunt ea explicabo tempore
+        nobis minus repellat.
       </div>
-    </div>    
+    </div>
   </div>
 
   <footer>
