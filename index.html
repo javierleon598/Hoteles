@@ -100,7 +100,8 @@
           <p class="card-text">Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -116,7 +117,8 @@
           <p class="card-text">Hotel ubicado en pleno centro</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -132,7 +134,8 @@
           <p class="card-text">Hotel ubicado en pleno centro</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -148,7 +151,8 @@
           <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro a pocos metros de la playa</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -164,7 +168,8 @@
           <p class="card-text">Hotel ubicado en pleno centro</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -180,7 +185,8 @@
           <p class="card-text">Hotel ubicado en pleno centro</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -196,7 +202,8 @@
           <p class="card-text">Hotel ubicado en pleno centro</p>
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
       <div class=" card card-hotel justify-content-between ml-2">
@@ -213,7 +220,8 @@
           
         </div>
         <div>
-          <button class="btn btn-primary btn-reversa"><span class="oi oi-plus"></span> Reservar</button>
+          <button class="btn btn-primary btn-reversa" data-toogle="popover" data-content="Consulta las promociones vigentes" title="Promociones" >
+            <span class="oi oi-plus"></span> Reservar</button>
         </div>
       </div>
     </div>
@@ -278,11 +286,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
     $(function(){
       $("[data-toogle='tooltip']").tooltip();
+    });
+    $(function(){
+      $("[data-toogle='popover']").popover();
     });
   </script>
 </body>
