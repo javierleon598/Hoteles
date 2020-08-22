@@ -249,7 +249,7 @@
     </div>
   </div>
   <div class="card card-hotel justify-content-between ml-2">
-    <button class="btn btn-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+    <button class="btn btn-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
   </div>
   <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -317,7 +317,26 @@
       $('.carousel').carousel({
         interval: 2000
       });
+      $("#contacto").on('show.bs.modal', function(e){
+        console.log('el modal se esta mostrando');
+        $("#contactoBtn").removeClass('btn-success');
+        $("#contactoBtn").addClass('btn-primary');
+        $("#contactoBtn").prop('disabled', false);
+      });
+      $("#contacto").on('shown.bs.modal', function(e){
+        console.log('el modal se mostro');
+      });
+      $("#contacto").on('hide.bs.modal', function(e){
+        console.log('el modal se esta ocultando');
+      });
+      $("#contacto").on('hidden.bs.modal', function(e){
+        console.log('el modal se oculto');
+        $("#contactoBtn").removeClass('btn-primary');
+        $("#contactoBtn").addClass('btn-success');
+        $("#contactoBtn").prop('disabled', false);
+      });
     });
+
   </script>
 </body>
 
