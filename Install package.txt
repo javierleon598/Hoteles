@@ -10,4 +10,16 @@ npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
 npm run usemin
 npm run build
 npm run start
-// AMBIENTE PRODUCCION
+// AMBIENTE PRODUCCION GRUNT
+
+// AMBIENTE PRODUCCION GULP
+npm install -g gulp-cli
+npm install --save-dev gulp
+npm install --save-dev gulp-sass
+npm install --save-dev browser-sync
+
+npm install del gulp-imagemin --save-dev
+npm install gulp-uglify gulp-usemin gulp-rev gulp-clean-css gulp-flatmap gulp-htmlmin --save-dev
+
+gulp build
+gulp
