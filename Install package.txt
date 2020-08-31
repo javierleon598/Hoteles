@@ -1,0 +1,13 @@
+// AMBIENTE DESARROLLO
+npm install
+npm install --save-dev onchange rimraf
+npm run watch:scss
+npm install --save-dev concurrently
+npm install --save-dev copyfiles
+npm install -g imagemin-cli --unsafe-perm-tru --allow-root
+npm run imagemin
+npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
+npm run usemin
+npm run build
+npm run start
+// AMBIENTE PRODUCCION
